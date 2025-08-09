@@ -1,8 +1,14 @@
-# React + Vite
+# 2 Code Daily – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**2 Code Daily** is a web application built to help developers practice LeetCode-style interview problems in a realistic environment. The application pairs with a custom Chrome extension that encourages users to speak through their thought process while solving problems, simulating a real interview scenario. It features a responsive dashboard for tracking progress, integration with the backend API, and smooth navigation. The project is hosted on Netlify and is live at [https://2codedaily.com](https://2codedaily.com).
 
-Currently, two official plugins are available:
+This repository contains only the **frontend** code. It is built using React with hooks, React Router for navigation, Tailwind CSS for styling, and Axios for API communication. The `src` folder contains components, pages, hooks, utilities, and styles, while static assets are stored in the `public` folder. The application is fully responsive and optimized for performance. It communicates with a separate backend and relies on the Chrome extension for certain interactive features.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To set up the project locally, clone the repository from GitHub and install dependencies using `npm install`. You should create a `.env` file in the root directory based on `.env.example`, adding the necessary configuration such as the API base URL. Start the development server with `npm start` and open the application in your browser. To build for production, run `npm run build`, which generates an optimized build in the `build` folder. For deployment, either use Netlify’s continuous deployment linked to the `main` branch or manually upload the build folder through the Netlify drag-and-drop interface.
+
+We welcome contributions from the community. All contributions should be made in a separate branch created from `main`, with branch names following a descriptive pattern such as `feature/your-feature-name` or `fix/your-bug-name`. Never commit directly to the `main` branch. Once your changes are complete and tested locally, push your branch to the repository and open a pull request (PR) against `main`. In your PR description, clearly explain the changes you have made, why they are necessary, and reference any related issues if applicable. All PRs will be reviewed before merging, and requested changes must be addressed before approval.
+
+By contributing to this project, you agree to follow clean coding practices, keep commits clear and focused, and ensure that all tests (if present) pass before submission. We value respectful communication, thoughtful code reviews, and a shared goal of improving the product for everyone. For significant changes, please open an issue first to discuss your proposed idea. Feedback from users is highly appreciated and can be given through the app’s feedback feature or by contacting the maintainer directly on [Twitter](https://twitter.com/RishikeshB4).
+
+The project is licensed under the MIT License, meaning you are free to use, modify, and distribute the code with proper attribution.  
+MIT License © 2025 Rishikesh Bagade
