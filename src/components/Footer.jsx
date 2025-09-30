@@ -22,9 +22,9 @@ export const Footer = () => {
               <li>
                 <Link to="/" className="hover:text-lavender transition">Home</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/pricing" className="hover:text-lavender transition">Pricing</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
