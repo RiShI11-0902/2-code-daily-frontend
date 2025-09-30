@@ -134,8 +134,8 @@ const Dashboard = () => {
         return <ProgressComponent />;
       case 'profile':
         return <UserProfile setViewState={setViewState} />;
-      case 'interview':
-        return <QuestionPack />;
+      // case 'interview':
+      //   return <QuestionPack />;
       case 'solved':
         return user?.solvedQuestions?.length > 0 ? (
           <InterviewPage />
@@ -217,7 +217,7 @@ const Dashboard = () => {
           showProgressView={showProgressView}
           showProfileView={showProfileView}
           showQuestionsView={showQuestionsView}
-          showStartInterview={showStartInterview}
+          // showStartInterview={showStartInterview}
         />
       </div>
 

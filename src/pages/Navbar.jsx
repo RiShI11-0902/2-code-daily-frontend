@@ -60,22 +60,22 @@ const Navbar = () => {
                 Contact Us
               </Link>
             </li>
-            <li className="mx-4 my-4 md:my-0">
+            {/* <li className="mx-4 my-4 md:my-0">
               <Link
                 to="/packs"
                 className="text-[#9290C3] hover:text-[#535C91] transition duration-300"
               >
                 Interview Packs
               </Link>
-            </li>
-            <li className="mx-4 my-4 md:my-0">
+            </li> */}
+            {/* <li className="mx-4 my-4 md:my-0">
               <Link
                 to="/pricing"
                 className="text-[#9290C3] hover:text-[#535C91] transition duration-300"
               >
                 Pricing
               </Link>
-            </li>
+            </li> */}
             {user && (
               <li className="mx-4 my-4 md:my-0">
                 <Link
