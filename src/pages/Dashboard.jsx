@@ -7,6 +7,7 @@ import ProgressComponent from "../components/ProgressComponent";
 import { ToastContainer, toast } from "react-toastify";
 import InterviewPage from "./InterviewPage";
 import {UserProfile} from "./UserProfile";
+import QuestionPack from "./QuestionPack";
 
 // Constants
 const TOAST_CONFIG = {
@@ -124,6 +125,7 @@ const Dashboard = () => {
   const showProgressView = () => setViewState('progress');
   const showProfileView = () => setViewState('profile');
   const showSolvedView = () => setViewState('solved');
+  const showStartInterview = () => setViewState('interview');
 
   // Render functions
   const renderMainContent = () => {
@@ -132,6 +134,8 @@ const Dashboard = () => {
         return <ProgressComponent />;
       case 'profile':
         return <UserProfile setViewState={setViewState} />;
+      case 'interview':
+        return <QuestionPack />;
       case 'solved':
         return user?.solvedQuestions?.length > 0 ? (
           <InterviewPage />
@@ -213,6 +217,7 @@ const Dashboard = () => {
           showProgressView={showProgressView}
           showProfileView={showProfileView}
           showQuestionsView={showQuestionsView}
+          showStartInterview={showStartInterview}
         />
       </div>
 

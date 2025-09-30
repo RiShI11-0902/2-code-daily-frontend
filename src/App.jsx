@@ -14,6 +14,7 @@ import { TermsConditions } from './pages/TermsConditions'
 import ContactSection from './pages/Contact'
 import AboutUs from './pages/About'
 import AuthenticateExtension from './pages/AuthenticateExtension'
+import InterviewPacks from './pages/InterviewPacks'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path='/about-us' element={<AboutUs />} />
 
           <Route path='/pricing' element={<Pricing />} />
+          <Route path='/packs' element={<InterviewPacks />} />
           <Route path='/terms-conditions' element={<TermsConditions />} />
           <Route path='/privacy-policy' element={<PrivacyPolicy />} />
           <Route path='/refunds' element={<CancellationRefunds />} />

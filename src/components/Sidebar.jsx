@@ -14,7 +14,8 @@ const Sidebar = ({
   showSolvedView, 
   showProgressView, 
   showProfileView, 
-  showQuestionsView 
+  showQuestionsView,
+  showStartInterview
 }) => {
   const { user, removeUser } = useUserStore();
   const [showModal, setShowModal] = React.useState(false);
@@ -53,6 +54,11 @@ const Sidebar = ({
       name: 'Solved',
       action: showSolvedView,
       testId: 'solved-btn'
+    },
+    {
+      name: 'Start Interview',
+      action: showStartInterview,
+      testId: 'premium-btn'
     },
     {
       name: 'Progress',
