@@ -128,10 +128,9 @@ const HomePage = () => {
 
                 </div>
 
-                <div className='flex flex-col space-y-5'>
+                {/* <div className='flex flex-col space-y-5'>
                     <p className='text-5xl font-extrabold'>Paid Plans</p>
                     <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-                        {/* Plan Card */}
                         {[
                             {
                                 name: 'Early Bird',
@@ -159,7 +158,7 @@ const HomePage = () => {
                             </div>
                         ))}
                     </div>
-                </div>
+                </div> */}
 
             </section>
 
